@@ -1,25 +1,11 @@
-# Initial page
+<!--
+ * @Author: Shuying Li <lishuying@gbcom.com.cn>
+ * @Date: 2021-01-30 23:54:39
+ * @LastEditTime: 2021-01-31 00:07:21
+ * @LastEditors: Shuying Li <lishuying@gbcom.com.cn>
+ * @Description: 
+ * @FilePath: /gitbook/README.md
+-->
+# Introduction
 
-## Getting Super Powers
-
-Becoming a super hero is a fairly straight forward process:
-
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
-
-
-
+Libunko's blog: blog.lishuying.top
