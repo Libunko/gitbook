@@ -1,7 +1,5 @@
 # 常用宏
 
-
-
 ## LD_LIBRARY_PATH
 
 ### 为什么修改LD_LIBRARY_PATH呢
