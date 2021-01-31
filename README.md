@@ -1,5 +1,7 @@
-# Introduction
+# 关于我
 
-## Artist of 0 and 1
+## 0 1 艺术家
 
-Libunko's blog: [https://blog.lishuying.top](https://blog.lishuying.top/)
+- **邮箱**：[lishuying.top@gmail.com](mailto:lishuying.top@gmail.com)
+- **博客**：[gitbook.lishuying.top](https://gitbook.lishuying.top/)
+- **GitHub**：[Libunko](https://github.com/Libunko)
