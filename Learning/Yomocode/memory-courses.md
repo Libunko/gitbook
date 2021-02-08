@@ -6,7 +6,7 @@
 
    1. 进程访问虚拟地址 v = (p, d)
    2. MMU 以 p 作为索引页表
-   3. Page frame (f)，加上便宜 d，得到物理地址
+   3. page frame (f)，加上偏移 d，得到物理地址
 
 2. kill -l 查看所有信号
 
