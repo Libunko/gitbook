@@ -29,6 +29,7 @@
 * [阅码场](Learning/Yomocode/README.md)
     * [内存](Learning/Yomocode/memory-courses.md)
     * [进程](Learning/Yomocode/process-courses.md)
+    * [同步、异步、阻塞、非阻塞和 IO 模型](Learning/Yomocode/同步、异步、阻塞、非阻塞和 IO 模型.md)
 * [Linux](Learning/Linux/README.md)
     * [用户空间刷 uboot](Learning/Linux/user_space_flash_uboot.md)
     * [Makefile-Template](Learning/Linux/Makefile-Template.md)
