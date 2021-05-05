@@ -106,7 +106,7 @@ https://www.liaoxuefeng.com/wiki/896043488029600/900394246995648
 
 `git stash drop a` 时，会打印 drop 的 hash 可以通过 `git stash apply hash` 找回 drop 的代码。
 
-# 工作流开发步骤
+## 工作流开发步骤
 
 1. 新建并切换到本dev新分支
 ```shell
@@ -130,7 +130,7 @@ git merge dev
 git push origin master:master
 ```
 
-## gitlab或github下fork后如何同步源的新更新内容？
+## gitlab 或 github 下 fork 后如何同步源的新更新内容？
 https://www.zhihu.com/question/28676261/answer/44606041
 
 ## 合并某个 commit 到 master
@@ -140,3 +140,23 @@ https://www.zhihu.com/question/28676261/answer/44606041
 git checkout master
 git cherry-pick 62ecee
 ```
+
+## 批量删除文件尾 ^M 字符
+
+^M 字符通常来源于 \r，当文件在 windows 编辑后，换行会带有 \r\n，而当该文件拷贝至 linux 后，linux 不识别 \r，导致出现 ^M 字符，解决方法只需 dos2unix 转化即可：dos2unix ./file
+
+```
+# 当 git diff 时发现 ^M 时，可批量转换
+git status | grep modified | awk '{print $2}' | xargs dos2unix
+```
+
+## 刷新 git 缓存
+
+cached 其实就是暂存区，然后一个是工作的目录，你的工作目录的东西做出修改时，会和缓存区进行对比，因此你 git status 时，会显示出来这个差异，因此为了使 .gitignore中 的内容生效，那么就删除掉暂存区，然后将所有本地文件追踪一下，就得到最新的暂存区文件。
+
+```
+git rm -r --cached .
+git add .
+git restore --staged .	# 撤回暂存
+```
+
